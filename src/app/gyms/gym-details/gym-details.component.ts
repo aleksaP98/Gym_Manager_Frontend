@@ -1,6 +1,6 @@
 import { GymsService } from './../../services/gyms.service';
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute,Router} from "@angular/router";
 
 
 
@@ -11,10 +11,15 @@ import {ActivatedRoute} from "@angular/router";
   styleUrls: ['./gym-details.component.css']
 })
 export class GymDetailsComponent implements OnInit{
-  public gym:any;
+  public gym:any = null;
   private gyms:Array<any>;
 
-  constructor(private route: ActivatedRoute,private gymsService:GymsService) {
+  constructor(
+    private route: ActivatedRoute,
+    private gymsService:GymsService,
+    private router:Router
+    ) 
+  {
     this.gyms = this.gymsService.getGyms();
     
     
@@ -27,7 +32,9 @@ export class GymDetailsComponent implements OnInit{
         this.gym = item
       }
     }
-    
+    if(this.gym == null){
+      this.router.navigate(["/home"]);
+    }
   }
   
   
