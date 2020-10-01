@@ -1,0 +1,28 @@
+<section class="page-title bg-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a routerLink='' class="text-sm letter-spacing text-white text-uppercase font-weight-bold">Home</a></li>
+              <li class="list-inline-item"><span class="text-white">|</span></li>
+              <li class="list-inline-item"><a routerLink='../contact' class="text-color text-uppercase text-sm letter-spacing">Contact</a></li>
+            </ul>
+             <h1 class="text-lg text-white mt-2">Contact us</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section blog bg-gray">
+    <div class="container">
+        <h3 class="text-center">Feel free to contact us down below</h3>
+        <div class="row justify-content-center mt-5">
+            <form (ngSubmit)="onSubmit(form)" #form="ngForm" class="form-group contactForm" action="">
+                <input class="form-control formInput" type="text" placeholder="First name" ngModel name="firstName" id="firstName" required #firstName="ngModel"><span class="formError" *ngIf="firstName.invalid && firstName.touched">First Name is required</span>
+                <input class="form-control formInput" type="text" placeholder="Last name" ngModel name="lastName" id="lastName" required #lastName="ngModel"><span class="formError" *ngIf="lastName.invalid && lastName.touched">Last Name is required</span>
+                <input class="form-control formInput"  type="text" placeholder="Email" ngModel name="email" id="email" required email #email="ngModel"><span class="formError" *ngIf="email.invalid && email.touched">Please enter a valid email adress</span>
+                <textarea class="form-control formInput messageBox" placeholder="Your message" ngModel name="message" id="message" required #message="ngModel"></textarea><span class="formError" *ngIf="message.invalid && message.touched">Please type a message you want to send</span>
+                <input [disabled]="form.invalid"  type="submit" class="form-control formInput" value="Send Message">
+            </form>
+          </div>  
+        </div>
+</section>

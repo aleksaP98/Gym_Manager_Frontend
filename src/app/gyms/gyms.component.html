@@ -1,0 +1,48 @@
+<section class="page-title bg-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a routerLink='' class="text-sm letter-spacing text-white text-uppercase font-weight-bold">Home</a></li>
+              <li class="list-inline-item"><span class="text-white">|</span></li>
+              <li class="list-inline-item"><a routerLink='../gyms' class="text-color text-uppercase text-sm letter-spacing">Gyms</a></li>
+            </ul>
+             <h1 class="text-lg text-white mt-2">Browse gyms</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section Blog start -->
+  <section class="section blog bg-gray">
+      <div class="container">
+          <div class="row">
+              <div *ngFor="let gym of gyms | paginate:{
+                itemsPerPage:3,
+                currentPage:currentPage,
+                totalItems:gyms.length
+              }" class="col-lg-4 col-md-6">
+                <article class="card border-0 rounded-0 mb-4">
+                    <a  (click)="onSelect(gym)">
+                        <img src="{{gym.imageCover}}" alt="" class="img-fluid">
+                    </a>
+                    <div class="mt-3 px-4 py-3 ">
+                        <h4 class="mb-3 font-secondary">{{gym.name}}</h4>
+                        <p class="mb-4">{{gym.description}}</p>
+                        <button (click)="onSelect(gym)" onclick="executeSlick()" class="gymButton mb-3 d-block">View Gym</button>
+                    </div>
+                </article>
+            </div>  
+          </div>
+          <div class="row justify-content-center mt-5">
+              <nav aria-label="Page navigation ">
+                <ul class="d-none">
+                  <li  *ngFor="let item of gyms | paginate:{itemsPerPage:3,currentPage:currentPage}">
+
+                  </li>
+                </ul>
+                <pagination-controls (pageChange)="currentPage = $event"></pagination-controls>
+              </nav>
+          </div>
+      </div>
+  </section>

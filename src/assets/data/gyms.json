@@ -1,0 +1,186 @@
+[
+    {
+        "id" : 1,
+        "name" : "Tonus Gym",
+        "description" : "Great for begginers",
+        "imageCover" : "assets/images/gyms/gym1.jpg",
+        "images" : [
+            {"src" : "assets/images/gyms/gym1.jpg", "alt" : "Tonus gym image"},
+            {"src":"assets/images/gyms/gym2.jpg", "alt":"Tonus gym image"}
+        ],
+        "trainers" : [
+            {
+                "id" : 1,
+                "firstName" : "Jovan",
+                "lastName" : "Perić",
+                "email" : "jovan.peric@gmail.com",
+                "phone" : "+381 62 5671-673",
+                "imageCover" : "assets/images/trainers/trainer1.jpg"
+            },
+            {
+                "id" : 7,
+                "firstName" : "Pedja",
+                "lastName" : "Jovanović",
+                "email" : "Pedja.jovanovic@gmail.com",
+                "phone" : "+381 60 7901-033",
+                "imageCover" : "assets/images/trainers/trainer7.jpg"
+            }
+        ]
+    },
+    {
+        "id" : 2,
+        "name" : "Coloseum",
+        "description" : "Take it to the top",
+        "imageCover" : "assets/images/gyms/gym3.jpg",
+        "images" : [
+            {"src" : "assets/images/gyms/gym3.jpg", "alt" : "Coloseum image"},
+            {"src":"assets/images/gyms/gym4.jpg", "alt":"Coloseum image"}
+        ],
+        "trainers" : [
+            {
+                "id" : 2,
+                "firstName" : "Dragana",
+                "lastName" : "Lazić",
+                "email" : "dragana.lazic@gmail.com",
+                "phone" : "+381 66 4441-233",
+                "imageCover" : "assets/images/trainers/trainer2.jpg"
+            }
+        ]
+    },
+    {
+        "id" : 3,
+        "name" : "Max Fit",
+        "description" : "Only the pros train here",
+        "imageCover" : "assets/images/gyms/gym5.jpg",
+        "images" : [
+            {"src" : "assets/images/gyms/gym5.jpg", "alt" : "Max fit image"},
+            {"src":"assets/images/gyms/gym6.png", "alt":"Max fit image"}
+        ],
+        "trainers" : [
+            {
+                "id" : 3,
+                "firstName" : "Marko",
+                "lastName" : "Marić",
+                "email" : "marko.maric@gmail.com",
+                "phone" : "+381 63 8471-233",
+                "imageCover" : "assets/images/trainers/trainer3.jpg"
+            },
+            {
+                "id" : 5,
+                "firstName" : "Stefan",
+                "lastName" : "Kolac",
+                "email" : "stefan.kolac@gmail.com",
+                "phone" : "+381 61 5551-113",
+                "imageCover" : "assets/images/trainers/trainer5.png"
+            }
+        ]
+    },
+    {
+        "id" : 4,
+        "name" : "Giant",
+        "description" : "Powerlifting life",
+        "imageCover" : "assets/images/gyms/gym7.jpg",
+        "images" : [
+            {"src" : "assets/images/gyms/gym7.jpg", "alt" : "Giant image"},
+            {"src":"assets/images/gyms/gym8.jpg", "alt":"Giant image"}
+        ],
+        "trainers" : [
+            {
+                "id" : 4,
+                "firstName" : "Borko",
+                "lastName" : "Benić",
+                "email" : "borko.benic@gmail.com",
+                "phone" : "+381 62 3111-678",
+                "imageCover" : "assets/images/trainers/trainer4.jpg"
+            }
+        ]
+    },
+    {
+        "id" : 5,
+        "name" : "Fizio gym",
+        "description" : "Fuse your muscles",
+        "imageCover" : "assets/images/gyms/gym9.jpg",
+        "images" : [
+            {"src" : "assets/images/gyms/gym9.jpg", "alt" : "Fizio gym image"},
+            {"src":"assets/images/gyms/gym10.jpg", "alt":"Fizio gym image"}
+        ],
+        "trainers" : [
+            {
+                "id" : 5,
+                "firstName" : "Stefan",
+                "lastName" : "Kolac",
+                "email" : "stefan.kolac@gmail.com",
+                "phone" : "+381 61 5551-113",
+                "imageCover" : "assets/images/trainers/trainer5.png"
+            }
+        ]
+    },
+    {
+        "id" : 6,
+        "name" : "Integral",
+        "description" : "More than magic",
+        "imageCover" : "assets/images/gyms/gym11.jpg",
+        "images" : [
+            {"src" : "assets/images/gyms/gym11.jpg", "alt" : "Integral image"},
+            {"src":"assets/images/gyms/gym12.jpg", "alt":"Integral image"}
+        ],
+        "trainers" : [
+            {
+                "id" : 6,
+                "firstName" : "Nikola",
+                "lastName" : "Lakonić",
+                "email" : "nikola.lakonic@gmail.com",
+                "phone" : "+381 69 1568-433",
+                "imageCover" : "assets/images/trainers/trainer6.jpg"
+            },
+            {
+                "id" : 8,
+                "firstName" : "Miloš",
+                "lastName" : "Ganić",
+                "email" : "milos.ganic@gmail.com",
+                "phone" : "+381 66 3681-913",
+                "imageCover" : "assets/images/trainers/trainer8.jpg"
+            }
+        ]
+    },
+    {
+        "id" : 7,
+        "name" : "Muscle Beach",
+        "description" : "Hit & run",
+        "imageCover" : "assets/images/gyms/gym13.jpg",
+        "images" : [
+            {"src" : "assets/images/gyms/gym13.jpg", "alt" : "Muscle beach image"},
+            {"src":"assets/images/gyms/gym14.jpg", "alt":"Muscle beach image"}
+        ],
+        "trainers" : [
+            {
+                "id" : 7,
+                "firstName" : "Pedja",
+                "lastName" : "Jovanović",
+                "email" : "Pedja.jovanovic@gmail.com",
+                "phone" : "+381 60 7901-033",
+                "imageCover" : "assets/images/trainers/trainer7.jpg"
+            }
+        ]
+    },
+    {
+        "id" : 8,
+        "name" : "BLOK",
+        "description" : "For true gangsters",
+        "imageCover" : "assets/images/gyms/gym15.jpg",
+        "images" : [
+            {"src" : "assets/images/gyms/gym15.jpg", "alt" : "BLOK image"},
+            {"src":"assets/images/gyms/gym16.jpg", "alt":"BLOK image"}
+        ],
+        "trainers" : [
+            {
+                "id" : 8,
+                "firstName" : "Miloš",
+                "lastName" : "Ganić",
+                "email" : "milos.ganic@gmail.com",
+                "phone" : "+381 66 3681-913",
+                "imageCover" : "assets/images/trainers/trainer8.jpg"
+            }
+        ]
+    }
+]

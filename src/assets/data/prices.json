@@ -1,0 +1,88 @@
+[
+    {
+        "id" : 1,
+        "name" : "Standard Pack",
+        "price" : 10,
+        "popular" : false,
+        "benefits" : [
+            {
+                "name" : "Gym membership",
+                "isValid" : true
+            },
+            {
+                "name" : "Personalized card",
+                "isValid" : true
+            },
+            {
+                "name" : "Mobile app",
+                "isValid" : false
+            },
+            {
+                "name" : "Progress tracker",
+                "isValid" : false
+            },
+            {
+                "name" : "Free personal trainings",
+                "isValid" : false
+            }
+        ]
+    },
+    {
+        "id" : 2,
+        "name" : "Premium Pack",
+        "price" : 20,
+        "popular" : true,
+        "benefits" : [
+            {
+                "name" : "Gym membership",
+                "isValid" : true
+            },
+            {
+                "name" : "Personalized card",
+                "isValid" : true
+            },
+            {
+                "name" : "Mobile app",
+                "isValid" : true
+            },
+            {
+                "name" : "Progress tracker",
+                "isValid" : true
+            },
+            {
+                "name" : "Free personal trainings",
+                "isValid" : false
+            }
+        ]
+
+    },
+    {
+        "id" : 3,
+        "name" : "Pro Pack",
+        "price" : 35,
+        "popular" : false,
+        "benefits" : [
+            {
+                "name" : "Gym membership",
+                "isValid" : true
+            },
+            {
+                "name" : "Personalized card",
+                "isValid" : true
+            },
+            {
+                "name" : "Mobile app",
+                "isValid" : true
+            },
+            {
+                "name" : "Progress tracker",
+                "isValid" : true
+            },
+            {
+                "name" : "Free personal trainings",
+                "isValid" : true
+            }
+        ]
+
+    }
+]

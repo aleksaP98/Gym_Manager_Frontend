@@ -1,0 +1,54 @@
+<footer class="footer bg-black-50">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+				<h2 class="text-white mb-4">Gym Manager</h2>
+				<p></p>
+				<p></p>
+			</div>
+			
+
+			<div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+				<div class="footer-widget recent-blog">
+					<h4 class="mb-4 text-white letter-spacing text-uppercase">Recents Posts</h4>
+					<div *ngFor="let post of posts">
+						<a routerLink="blog" class="text-white">{{post.title}}</a>
+						<p class="text-sm mt-2 text-white-50">{{post.createdAt | date}}</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-5 mb-5 mb-lg-0">
+				<div class="footer-widget">
+					<h4 class="mb-4 text-white letter-spacing text-uppercase">Quick Links</h4>
+					<ul class="list-unstyled footer-menu lh-40 mb-0">
+						<li><a routerLink="about"><i class="ti-angle-double-right mr-2"></i>About Us</a></li>
+						<li><a routerLink="gyms"><i class="ti-angle-double-right mr-2"></i>Gyms</a></li>
+						<li><a routerLink="membership"><i class="ti-angle-double-right mr-2"></i>Membership</a></li>
+						<li><a routerLink="contact"><i class="ti-angle-double-right mr-2"></i>Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-5">
+				<div class="footer-widget">
+					<h4 class="mb-4 text-white letter-spacing text-uppercase">Home location</h4>
+					<p>Takovska 15</p>
+					<span class="text-white">+381 61-345-3345</span>
+					<p class="text-white">gymmanager@gmail.com</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row align-items-center mt-5 px-3 bg-black mx-1">
+			<div class="col-lg-4">
+				<p class="text-white mt-3">Gym Manager © Aleksa Predragović</p>
+			</div>
+			<div class="col-lg-6 ml-auto text-right">
+				<ul class="list-inline mb-0 footer-socials">
+					<li class="list-inline-item"><a href="https://www.facebook.com"><i class="ti-facebook"></i></a></li>
+					<li class="list-inline-item"><a href="https://twitter.com"><i class="ti-twitter"></i></a></li>
+					<li class="list-inline-item"><a href="https://github.com"><i class="ti-github"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>

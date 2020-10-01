@@ -1,0 +1,54 @@
+<section class="page-title bg-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a routerLink="" class="text-sm letter-spacing text-white text-uppercase font-weight-bold">Home</a></li>
+              <li class="list-inline-item"><span class="text-white">|</span></li>
+              <li class="list-inline-item"><a routerLink="../membership" class="text-color text-uppercase text-sm letter-spacing">Membership</a></li>
+            </ul>
+             <h1 class="text-lg text-white mt-2">Memebership Cards</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="membership" class="section pricing">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 text-center">
+				<div class="section-title">
+					<div class="divider mb-3"></div>
+					<h2>Package Pricing</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div *ngFor="let price of prices" class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+				<div class="card rounded-0 px-4 py-5 ">
+					<h4 class="text-center card-title text-capitalize font-weight-normal font-secondary"><span *ngIf="price.popular" class="text-sm bg-dark text-light py-1 px-2 mr-2">Popular</span>{{price.name}}</h4>
+					<h3 class="text-center font-secondary position-relative mt-2"><sup class="text-sm position-absolute "></sup>{{price.price | currency:'EUR':true}}</h3>
+
+ 					<div class="card-body mt-2">
+						<ul class="list-unstyled lh-35 mb-4">
+							<li *ngFor="let benefit of price.benefits" class="text-black font-weight-bold">
+								<i *ngIf="benefit.isValid; else elseBlock" class="ti-check mr-3 text-color "></i>
+								<ng-template #elseBlock><i class="ti-close mr-3"></i></ng-template>
+								{{benefit.name}}
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+        </div>
+        <div class="membershipNotice mt-5 text-center">
+            <h3>
+                If you wish to purchase a membership card simply go to one of our gyms and get it there.
+            </h3>
+            <h4>
+                You can see all available gyms <a class="text-color" routerLink="../gyms">here</a>
+            </h4>
+
+        </div>
+	</div>
+</section>
